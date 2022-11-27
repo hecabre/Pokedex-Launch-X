@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex LaunchX</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="">
+      <div class="title">
+        <h1>Pokedex LaunchX</h1>
+      </div>
+      <section class="card">
+        <div class="inputs">
+          <input
+            type="text"
+            placeholder="INTRODUCE EL NOMBRE O ID DEL POKEMON"
+            id="pokeName"
+            name="pokeName"
+          />
+          <div class="buttonsActions">
+            <button onclick="fetchPokemon()" id="searchPokemon">
+              Buscar Pokemon
+            </button>
+            <button id="sound">Music Off🔇</button>
+          </div>
+          <div class="buttons">
+            <div class="button"></div>
+            <div class="button-2"></div>
+            <div class="button-3"></div>
+          </div>
+          <section class="crosses">
+            <div class="cross"></div>
+            <div class="cross"></div>
+          </section>
+        </div>
+        <div class="data">
+          <h2>Estadisticas</h2>
+          <p id="name"></p>
+          <p id="id"></p>
+          <img src="./static/pokeball.png" alt="Pokemon" id="pokeImg" />
+          <div class="info">
+            <p id="type"></p>
+            <p id="hability"></p>
+            <p id="stats"></p>
+            <p id="weight"></p>
+            <p id="height"></p>
+            <p id="imgText">Imagenes:</p>
+            <div class="images">
+              <img
+                src="./static/pokeball.png"
+                alt="pokeImage"
+                id="img1"
+                class=""
+              />
+              <img
+                src="./static/pokeball.png"
+                alt="pokeImage"
+                id="img2"
+                class=""
+              />
+              <img
+                src="./static/pokeball.png"
+                alt="pokeImage"
+                id="img3"
+                class=""
+              />
+              <img
+                src="./static/pokeball.png"
+                alt="pokeImage"
+                id="img4"
+                class=""
+              />
+              <img
+                src="./static/pokeball.png"
+                alt="pokeImage"
+                id="img5"
+                class=""
+              />
+              <img
+                src="./static/pokeball.png"
+                alt="pokeImage"
+                id="img6"
+                class=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <audio id="audio" controls loop>
+        <source type="audio/mp3" src="./static/music.mp3" />
+      </audio>
+    </main>
+  </body>
+  <footer>
+    <script src="./app.js"></script>
+  </footer>
+</html>
